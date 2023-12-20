@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_conteudo">
+            <h1>Leandro Riello Martins</h1>
+            <p>Web Designer</p>
+        </div>
+    </header>
+    <section id="carrosel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="imagem1.png" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem2.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem3.png" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem4.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem5.png" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="imagem6.png" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:black"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        
+        <!-- Imagens Carrocel -->
+    </section>
+    <section id="projetos">
+        <div class="conteudo">
+            <h2>Sobre mim:</h2>
+            <p> Atualmente estou cursando Engenharia da Computação pela Galileu. Além disso sou apaixonado pela área da
+                tecnologia, e acredito que ela proporciona oportunidades incríveis,
+                a área da tecnologia é um vasto e dinâmico campo que abrange o estudo, desenvolvimento e aplicação de
+                conhecimentos técnicos para criar soluções inovadoras. É um universo em constante evolução, impulsionado
+                pela busca por novas maneiras de melhorar a vida das pessoas, otimizar processos e promover avanços em
+                diversos setores. Seria fantástico entrar nessa área.</p>
+        </div>
+        <!-- Adicione os Projetos -->
+    </section>
+    </section>
+    <section id="projetos">
+        <div class="conteudo">
+            <h2>Emprego:</h2>
+            <p>Em busca da primeira oportunidade de emprego.</p>
+        </div>
+        <!-- Adicione os Projetos -->
+    </section>
+    <section id="habilidades">
+        <div class="conteudo">
+            <h2>Interesse Profissional</h2>
+            <p> Tenho interesse especial em áreas como desenvolvimento de software, inteligência artificial, aprendizado
+                de máquina, cibersegurança, análise de dados e cloud computing. Busco oportunidades que me permitam
+                aprimorar minhas habilidades técnicas, participar de projetos inovadores e acompanhar as tendências
+                tecnológicas em constante evolução. Além disso, tenho grande interesse em contribuir para soluções que
+                possam impactar positivamente a sociedade e o mercado, alinhando tecnologia e inovação para enfrentar
+                desafios contemporâneos.</p>
+        </div>
+        <!-- Habilidades -->
+    </section>
+    <section id="projetos">
+        <div class="conteudo">
+            <h2>Objetivo Principal:</h2>
+            <p> Busco oportunidade de emprego na área da tecnologia para aplicar e desenvolver meus conhecimentos em
+                desenvolvimento de software, análise de dados, segurança da
+                informação, entre outros, contribuindo com soluções inovadoras e agregando valor à equipe e à empresa.
+                Tenho interesse em desafios que me permitam crescer profissionalmente e acompanhar a evolução do setor,
+                buscando sempre atualização e aprendizado contínuo.</p>
+        </div>
+        <!-- Adicione os Projetos -->
+    </section>
+    <section id="contato">
+        <div class="conteudo">
+            <h2>Contato:</h2>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSerB7LSJ3HTLdiMQMCKlAJmyKSeRwtzQgab5VraO_DtwbwHGg/viewform?embedded=true"
+                width="640" height="776" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+        <!-- Formalulário de Contato -->
+    </section>
+    <section id="calculo_proj">
+        <div class="conteudo">
+            <h2>Faça um orçamento do deu projeto aqui</h2>
+            <div class="calculo">
+                <label for="tipo"> Tipo de Projeto: </label>
+                <select name="tipoprojeto" id="tipoprojeto">
+                    <option value="Website"> Website </option>
+                    <option value="LadingPage"> Landin Page </option>
+                    <option value="WebApp"> Aplicação Web </option>
+                </select>
+                <!-------------->
+                <label for="horasprojeto"> Horas Estimadas:</label>
+                <input type="number" id="horasprojeto" placeholder="Horas">
+                <button onclick="calcularprojeto()"> Calcular Proço do Projeto </button>
+                <p id="preco"> Preço do Porjeto: R$0,00</p>
+            </div>
+        </div>
+        <!-- Calculo de Projetos -->
+    </section>
+    <footer>
+        &copy;Leandro Martins
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="perfil.js"></script>
+</body>
+
+</html>
